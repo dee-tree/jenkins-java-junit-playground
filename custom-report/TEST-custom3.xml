@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-    <testsuite name="Suite1">
+    <testsuite name="Suite10">
         <testcase name="success" class="Suite1"></testcase>
     </testsuite>
-    <testsuite name="Suite2">
+    <testsuite name="Suite20">
         <testcase name="success" class="Suite2"></testcase>
     </testsuite>
 </testsuites>
