@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite name="CustomClass" failures="1">
+    <testcase name="multfailure" class="CustomClass" assertions="5">
+        <failure>Failure 1</failure>
+    </testcase>
+
+    <testcase name="multfailure" class="CustomClass" assertions="5">
+        <failure>Failure 2</failure>
+    </testcase>
+
+</testsuite>
