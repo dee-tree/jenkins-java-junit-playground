@@ -20,6 +20,8 @@ pipeline {
         always {
             junit 'build/**/TEST-*.xml'
             junit 'custom-report/TEST-*.xml'
+            xunit (tools: [ BoostTest(pattern: 'build/**/TEST-*.xml') ], skipPublishingChecks: false)
+            xunit (tools: [ BoostTest(pattern: 'custom-report/TEST-*.xml') ], skipPublishingChecks: false)
         }
     }
 }
