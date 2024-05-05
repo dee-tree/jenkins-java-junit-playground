@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 git 'https://github.com/dee-tree/jenkins-java-junit-playground'
+                sh 'chmod +x ./gradlew'
                 sh './gradlew clean assemble'
             }
         }
@@ -18,6 +19,7 @@ pipeline {
     post {
         always {
             junit 'build/**/TEST-*.xml'
+            junit 'custom-report/TEST-*.xml'
         }
     }
 }
