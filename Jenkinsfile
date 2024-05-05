@@ -21,11 +21,12 @@ pipeline {
 //             junit 'build/**/TEST-*.xml'
 //             junit 'custom-report/TEST-*.xml'
             xunit (tools: [ JUnit(pattern: 'build/**/TEST-*.xml') ], skipPublishingChecks: false)
+            xunit (tools: [ JUnit(pattern: 'custom-report/TEST-*.xml') ], skipPublishingChecks: false)
 //             xunit (tools: [ JUnitType(pattern: 'custom-report/TEST-*.xml') ], skipPublishingChecks: false)
-            xunit (
-                thresholds: [[$class: 'FailedThreshold', unstableThreshold: '1']],
-                tools: [[$class: 'JUnitType', pattern: 'build/**/TEST-*.xml']]
-            )
+//             xunit (
+//                 thresholds: [[$class: 'FailedThreshold', unstableThreshold: '1']],
+//                 tools: [[$class: 'JUnitType', pattern: 'build/**/TEST-*.xml']]
+//             )
         }
     }
 }
