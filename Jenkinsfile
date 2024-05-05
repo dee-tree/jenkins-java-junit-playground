@@ -13,12 +13,11 @@ pipeline {
             steps {
                 sh './gradlew test'
             }
-
-            post {
-                always {
-                    junit '**/TEST-*.xml'
-                }
-            }
+        }
+    }
+    post {
+        always {
+            junit 'build/**/TEST-*.xml'
         }
     }
 }
