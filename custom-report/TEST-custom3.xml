@@ -6,4 +6,14 @@
     <testsuite name="Suite20">
         <testcase name="success" class="Suite2"></testcase>
     </testsuite>
+    <testsuite name="FailedSuite1">
+        <testcase name="failure11" class="FailedSuite1">
+            <failure>Failure due to assertion</failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="FailedSuite2">
+        <testcase name="failure21" class="FailedSuite1">
+            <failure>Failure due to assertion</failure>
+        </testcase>
+    </testsuite>
 </testsuites>
