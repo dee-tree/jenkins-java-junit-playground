@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite name="MultipleFailuresSuite">
+    <testcase name="anycase" class="MultipleFailuresSuite">
+        <failure>First assertion failed!</failure>
+    </testcase>
+    <testcase name="anycase" class="MultipleFailuresSuite">
+        <failure>Second assertion failed!</failure>
+    </testcase>
+    <testcase name="anycase" class="MultipleFailuresSuite">
+        <failure>Third assertion failed!</failure>
+    </testcase>
+
+    <testcase name="anothercase" class="MultipleFailuresSuite">
+        <error>Ooops Error!</error>
+    </testcase>
+
+    <testcase name="truecase" class="MultipleFailuresSuite"/>
+</testsuite>
